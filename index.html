@@ -4,282 +4,188 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mayank Kashyap — B.Tech CSE AI student at MIET. Explore my skills, projects and learning journey.">
   <title>Mayank Kashyap | Portfolio</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #0b1120;
-      color: #f8fafc;
-      line-height: 1.7;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 22px 8%;
-      border-bottom: 1px solid #263247;
-      position: sticky;
-      top: 0;
-      background: #0b1120;
-    }
-
-    nav h2 {
-      color: #38bdf8;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 18px;
-    }
-
-    nav a:hover {
-      color: #38bdf8;
-    }
-
-    section {
-      padding: 75px 8%;
-    }
-
-    .hero {
-      min-height: 80vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-    }
-
-    .hero p {
-      max-width: 650px;
-    }
-
-    .tagline {
-      color: #38bdf8;
-      font-weight: bold;
-    }
-
-    h1 {
-      font-size: clamp(42px, 7vw, 72px);
-      line-height: 1.2;
-      margin: 15px 0;
-    }
-
-    h1 span, h2 span {
-      color: #38bdf8;
-    }
-
-    h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
-    }
-
-    p {
-      color: #bdc8d9;
-      margin-bottom: 15px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #38bdf8;
-      color: #07111e;
-      padding: 11px 20px;
-      border-radius: 7px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 15px;
-      margin-right: 10px;
-    }
-
-    .btn:hover {
-      background: #7dd3fc;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #131e32;
-      border: 1px solid #263247;
-      padding: 24px;
-      border-radius: 12px;
-      transition: transform 0.2s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      border-color: #38bdf8;
-    }
-
-    .card h3 {
-      color: #38bdf8;
-      margin-bottom: 10px;
-    }
-
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .skills span {
-      padding: 10px 16px;
-      border: 1px solid #38bdf8;
-      border-radius: 8px;
-      background: #131e32;
-    }
-
-    .contact a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-
-    footer {
-      text-align: center;
-      padding: 25px;
-      border-top: 1px solid #263247;
-      color: #bdc8d9;
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        padding: 18px 5%;
-        flex-wrap: wrap;
-        gap: 12px;
-      }
-
-      nav a {
-        margin-left: 8px;
-        font-size: 14px;
-      }
-
-      section {
-        padding: 55px 6%;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <div class="wrap">
+    <header class="nav">
+      <a class="brand" href="#home">mayank<span>.</span></a>
+      <nav class="navlinks" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <nav>
-    <h2>Mayank<span>.</span></h2>
-    <div>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+    <main>
+      <section class="hero" id="home">
+        <div>
+          <p class="eyebrow">Computer Science Student · AI</p>
+          <h1>Hi, I'm<br><span>Mayank.</span></h1>
+          <p class="lead">
+            A second-year CSE (AI) student at MIET, curious about
+            technology, problem-solving, and building things that
+            make a difference.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="#projects">Explore my work ↗</a>
+            <a class="btn" href="#contact">Get in touch</a>
+          </div>
+        </div>
 
-  <section class="hero" id="home">
-    <p class="tagline">B.Tech Student | CSE (AI)</p>
-    <h1>Hi, I'm <span>Mayank Kashyap.</span></h1>
-    <p>
-      I'm a second-year Computer Science and Engineering
-      (Artificial Intelligence) student at MIET.
-      I'm passionate about programming, problem-solving,
-      technology, and exploring Artificial Intelligence.
-    </p>
-    <div>
-      <a href="#projects" class="btn">Explore My Projects</a>
-      <a href="#contact" class="btn">Contact Me</a>
-    </div>
-  </section>
+        <aside class="profile-card">
+          <div class="avatar">MK</div>
+          <h2>Mayank Kashyap</h2>
+          <p>B.Tech · Computer Science & Engineering (AI)</p>
+          <p>MIET · 2nd Year</p>
+          <div class="status">
+            <span class="dot"></span>
+            Learning, building, improving
+          </div>
+        </aside>
+      </section>
 
-  <section id="about">
-    <h2>About <span>Me</span></h2>
-    <p>
-      Hello! I'm Mayank, currently pursuing B.Tech in
-      Computer Science and Engineering (AI), second year,
-      at MIET. I'm strengthening my programming fundamentals,
-      learning Data Structures and Algorithms, and exploring
-      web development and AI. I enjoy learning new technologies
-      and building projects as I grow my skills.
-    </p>
-  </section>
+      <section id="about">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">A little about me</p>
+            <h2>Learning by building.</h2>
+          </div>
+          <p>Growing my fundamentals while exploring software
+            development and artificial intelligence.</p>
+        </div>
 
-  <section id="skills">
-    <h2>My <span>Skills</span></h2>
-    <div class="skills">
-      <span>C Programming</span>
-      <span>Data Structures</span>
-      <span>Algorithms</span>
-      <span>Python</span>
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>Git & GitHub</span>
-      <span>Problem Solving</span>
-      <span>Artificial Intelligence</span>
-    </div>
-  </section>
+        <div class="about-grid">
+          <div class="panel">
+            <p>
+              I'm Mayank, a second-year CSE (AI) student at MIET.
+              I'm developing my programming and problem-solving
+              skills step by step, and exploring how software and
+              AI can solve real-world problems. This portfolio is
+              where I'll share my learning journey, projects,
+              and milestones.
+            </p>
+          </div>
 
-  <section id="projects">
-    <h2>My <span>Projects</span></h2>
-    <div class="grid">
-      <div class="card">
-        <h3>C Programming</h3>
-        <p>
-          A collection of C programming exercises to practice
-          logic, loops, arrays, functions, and pointers.
+          <div class="stats">
+            <div class="stat">
+              <strong>02</strong>
+              <span>Year of B.Tech</span>
+            </div>
+            <div class="stat">
+              <strong>CSE · AI</strong>
+              <span>Academic focus</span>
+            </div>
+            <div class="stat">
+              <strong>Curious</strong>
+              <span>Mindset</span>
+            </div>
+            <div class="stat">
+              <strong>Growing</strong>
+              <span>Every day</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">My toolkit</p>
+            <h2>Skills I'm building.</h2>
+          </div>
+          <p>A growing toolkit of technologies I'm learning
+            and practising.</p>
+        </div>
+
+        <div class="chips">
+          <span class="chip">C Programming</span>
+          <span class="chip">Data Structures & Algorithms</span>
+          <span class="chip">Python</span>
+          <span class="chip">HTML & CSS</span>
+          <span class="chip">Problem Solving</span>
+          <span class="chip">Artificial Intelligence</span>
+          <span class="chip">Git & GitHub</span>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2>Projects & practice.</h2>
+          </div>
+          <p>A showcase for coursework, personal projects,
+            and coding practice.</p>
+        </div>
+
+        <div class="cards">
+          <article class="project">
+            <div class="symbol">⌘</div>
+            <h3>C Programming Practice</h3>
+            <p>Programs and exercises to strengthen core
+              programming concepts, logic, and problem-solving.</p>
+            <div class="tagrow">
+              <span class="tag">C</span>
+              <span class="tag">Fundamentals</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="symbol">◇</div>
+            <h3>DSA Practice</h3>
+            <p>Learning arrays, linked lists, searching, and
+              sorting with implementations and dry runs.</p>
+            <div class="tagrow">
+              <span class="tag">DSA</span>
+              <span class="tag">Algorithms</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="symbol">✳</div>
+            <h3>AI Learning Journey</h3>
+            <p>Exploring Python, AI concepts, and useful
+              applications as I continue learning.</p>
+            <div class="tagrow">
+              <span class="tag">Python</span>
+              <span class="tag">AI</span>
+            </div>
+          </article>
+        </div>
+
+        <p class="note">
+          These are starter entries. Replace them with your
+          actual projects and GitHub repository links.
         </p>
-      </div>
+      </section>
 
-      <div class="card">
-        <h3>DSA Practice</h3>
-        <p>
-          Practice implementations of arrays, linked lists,
-          searching, and sorting algorithms in C.
+      <section id="contact">
+        <div class="contact">
+          <div>
+            <p class="eyebrow">Let's connect</p>
+            <h2>Have an idea? Let's talk.</h2>
+            <p>Open to learning, collaboration, and connecting
+              with fellow developers.</p>
+          </div>
+          <a class="btn primary" href="mailto:your.email@example.com">
+            Email me ↗
+          </a>
+        </div>
+        <p class="note">
+          Replace the sample email with your real email address.
         </p>
-      </div>
+      </section>
+    </main>
 
-      <div class="card">
-        <h3>Personal Portfolio</h3>
-        <p>
-          A responsive personal website built using HTML
-          and CSS to showcase my learning journey and skills.
-        </p>
-      </div>
-    </div>
-    <p style="margin-top: 18px;">
-      Note: Replace these sample entries with your actual
-      projects when they are ready.
-    </p>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Let's <span>Connect</span></h2>
-    <p>
-      I'm interested in learning, collaborating, and connecting
-      with other students and developers.
-    </p>
-    <p>
-      GitHub:
-      <a href="https://github.com/" target="_blank"
-         rel="noopener noreferrer">Visit GitHub</a>
-    </p>
-    <p>
-      LinkedIn:
-      <a href="https://www.linkedin.com/" target="_blank"
-         rel="noopener noreferrer">Visit LinkedIn</a>
-    </p>
-    <p>
-      Email: Add your email address here.
-    </p>
-  </section>
-
-  <footer>
-    <p>© 2026 Mayank Kashyap | Built with HTML & CSS</p>
-  </footer>
-
+    <footer class="footer">
+      <span>© 2026 Mayank Kashyap</span>
+      <a href="#home">Back to top ↑</a>
+    </footer>
+  </div>
 </body>
 </html>
