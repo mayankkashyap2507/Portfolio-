@@ -36,7 +36,7 @@ I'm **Mayank Kashyap**, a second-year B.Tech student in **Computer Science & Eng
 
 Once GitHub Pages is enabled, visit:
 
-`https://YOUR-USERNAME.github.io/`
+`https://mayank2507.github.io/`
 
 Replace `YOUR-USERNAME` with your actual GitHub username.
 
